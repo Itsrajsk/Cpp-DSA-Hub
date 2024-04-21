@@ -11,7 +11,6 @@ This repository serves as my public space where I store my solutions to assignme
 - [Setup](#setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Setup
 
