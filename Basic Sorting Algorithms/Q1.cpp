@@ -22,7 +22,7 @@ void bubbleSort(int arr[], int n)
         }
         if (!isSwap)
         {
-            return;
+            break;
         }
     }
     output(arr, n);
@@ -34,7 +34,7 @@ void selectionSort(int arr[], int n)
         int minIdx = i;
         for (int j = i + 1; j < n; j++)
         {
-            if (arr[j] < arr[minIdx])
+            if (arr[j] > arr[minIdx])
             {
                 minIdx = j;
             }
@@ -83,9 +83,13 @@ void countingSort(int arr[], int n)
 int main()
 {
     int arr[] = {3, 6, 2, 1, 8, 7, 4, 5, 3, 1};
-    // bubbleSort(arr, 10);
-    // selectionSort(arr, 10);
-    // insertionSort(arr, 10);
+    cout << "Bubble Sort : " << endl;
+    bubbleSort(arr, 10);
+    cout << "\nSelection Sort : " << endl;
+    selectionSort(arr, 10);
+    cout << "\nInsertion Sort : " << endl;
+    insertionSort(arr, 10);
+    cout << "\nCounting Sort : " << endl;
     countingSort(arr, 10);
     return 0;
 }
